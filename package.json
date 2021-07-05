@@ -1,0 +1,32 @@
+{
+  "name": "launchpad",
+  "version": "0.1.0",
+  "description": "Electron app to control MIDI messages to and from MIDI devices",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Burro/Electron-Launchpad.git"
+  },
+  "keywords": [
+    "Electron",
+    "MIDI",
+    "Launchpad"
+  ],
+  "author": "Tom Holsters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/El-Burro/Electron-Launchpad/issues"
+  },
+  "homepage": "https://github.com/El-Burro/Electron-Launchpad#readme",
+  "devDependencies": {
+    "electron": "^13.0.1",
+    "electron-reloader": "^1.2.1"
+  },
+  "dependencies": {
+    "madge": "^4.0.2"
+  }
+}

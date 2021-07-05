@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Launchpad!</title>
+</head>
+
+<body>
+  <div class="mainWrapper">
+    <div class="group">
+      <button id="key-test">send key</button>
+      <button id='reset-all'>Reset all</button>
+      <!-- <div class="presets-container">
+        <p>Presets</p>
+        <button id='preset-1'>Preset 1</button>
+        <button id='preset-2'>Preset 2</button>
+        <button id='preset-3'>Preset 3</button>
+      </div> -->
+    </div>
+
+    <div class="btn-grid-container">
+    </div>
+
+
+    <div class="controls-container">
+      <p>Selected input:<span id="button-id">no button selected</span></p>
+      <!--
+    <input type="color" id="input-color" disabled value="#d0d0d0" /> -->
+
+      <div class="slider-wrapper">
+        <div class="slider">
+          <label for="pad-color-red">Red</label>
+          <input type="range" min="0" max="3" step="1" id="pad-color-red" value="0" />
+        </div>
+        <div class="slider">
+          <label for="pad-color-green">Green</label>
+          <input type="range" min="0" max="3" step="1" id="pad-color-green" value="0" />
+        </div>
+        </label>
+      </div>
+      <button id='reset'>Reset</button>
+    </div>
+  </div>
+
+  <input type="range" min="1" max="100" value="10" class="slider" id="myRange">
+
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

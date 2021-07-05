@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+.mainWrapper {
+  display: flex;
+  gap: 12px;
+}
+.mainWrapper .group {
+  display:flex;
+  flex-direction: column;
+}
+.btn-grid-container {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  gap: 4px;
+  margin: 4px;
+  height: 540px;
+  width: 540px;
+}
+
+#key-test,
+#reset-all {
+  height: 40px;
+}
+#reset-all {
+  margin: 8px 0;
+}
+
+.controls-container {
+  border: 1px solid #d2d2d2;
+  padding: 8px 4px;
+}
+#input-color {
+  height: 40px;
+}
+
+.slider-wrapper {
+  display: flex;
+  height: 80px;
+  margin-bottom: 16px;
+}
+.slider label {
+  display: block;
+}
+
+.slider input {
+  transform-origin: 32px;
+  transform: rotate(-90deg) translate(-28px, -12px);
+  width: 64px;
+}
+.btn.round {
+  border-radius: 50%;
+}
+#button-id {
+  margin-left: 4px;
+  color: slategray;
+}
+
+.btn {
+  height: 56px;
+  width:  56px;
+  background: #cecece;
+  border: none;
+  border-radius: 3px;
+}
+.btn#btn-3-3,
+.btn#btn-3-4,
+.btn#btn-4-3,
+.btn#btn-4-4 {
+  background-position: bottom left, bottom right, top right, top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.btn#btn-3-3 {
+  background: linear-gradient(-45deg, transparent 4px, #cecece 4px);
+}
+.btn#btn-3-4 {
+  background: linear-gradient(45deg, transparent 4px, #cecece 4px);
+}
+.btn#btn-4-3 {
+  background: linear-gradient(-135deg, transparent 4px, #cecece 4px);
+}
+.btn#btn-4-4 {
+  background: linear-gradient(135deg, transparent 4px, #cecece 4px);
+}
+.btn.highlighted {
+  border: 3px solid #48a6fd;
+}
+.btn.highlighted.flash {
+  animation: flash .7s .3s alternate infinite linear;
+}
+
+@keyframes flash{
+  from{
+    background: #fff;
+  }
+  to{
+    background: #4077d7;
+  }
+}
